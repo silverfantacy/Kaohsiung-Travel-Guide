@@ -1,6 +1,6 @@
 var locationData = '';
 var xhr = new XMLHttpRequest();
-xhr.open('get', 'http://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97', true);
+xhr.open('get', 'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97', true);
 xhr.send(null);
 xhr.onload = function () {
     var content = JSON.parse(xhr.responseText);
@@ -14,7 +14,7 @@ function renderHTML() {
     // 開始進行你想執行的動作
     var len = locationData.length;
 
-    // console.log(len);
+    console.log(len);
 
     // for(var i=0;i<len;i++){
     //     if( locationData[i].Zone == '三民區'){
